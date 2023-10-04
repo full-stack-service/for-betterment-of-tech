@@ -3,6 +3,7 @@ const fs = require("fs");
 const path = require("path");
 
 class Product {
+  
   // Delete Image from uploads -> products folder
   static deleteImages(images, mode) {
     var basePath =

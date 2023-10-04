@@ -9,6 +9,7 @@ var gateway = new braintree.BraintreeGateway({
 });
 
 class brainTree {
+  
   ganerateToken(req, res) {
     gateway.clientToken.generate({}, (err, response) => {
       if (err) {

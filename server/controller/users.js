@@ -2,6 +2,7 @@ const userModel = require("../models/users");
 const bcrypt = require("bcryptjs");
 
 class User {
+  
   async getAllUser(req, res) {
     try {
       let Users = await userModel

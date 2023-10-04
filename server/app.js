@@ -32,6 +32,7 @@ const brainTreeRouter = require("./routes/braintree");
 const orderRouter = require("./routes/orders");
 const usersRouter = require("./routes/users");
 const customizeRouter = require("./routes/customize");
+
 // Import Auth middleware for check user login or not~
 const { loginCheck } = require("./middleware/auth");
 const CreateAllFolder = require("./config/uploadFolderCreateScript");
@@ -70,7 +71,7 @@ app.use("/api", brainTreeRouter);
 app.use("/api/order", orderRouter);
 app.use("/api/customize", customizeRouter);
 
-// Run Server
+// Run Server at port 8000
 const PORT = process.env.PORT || 8000;
 app.listen(PORT, () => {
   console.log("Server is running on ", PORT);

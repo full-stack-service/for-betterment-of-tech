@@ -5,6 +5,8 @@ const jwt = require("jsonwebtoken");
 const { JWT_SECRET } = require("../config/keys");
 
 class Auth {
+  
+  // Authorization controller
   async isAdmin(req, res) {
     let { loggedInUserId } = req.body;
     try {

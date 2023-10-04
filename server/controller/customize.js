@@ -6,6 +6,7 @@ const userModel = require("../models/users");
 const customizeModel = require("../models/customize");
 
 class Customize {
+  
   async getImages(req, res) {
     try {
       let Images = await customizeModel.find({});
