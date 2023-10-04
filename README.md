@@ -1,6 +1,7 @@
 # Project Title
 
-Full Stack Service's first contribution!
+Full Stack Service's biggest contribution ever!
+The Full Stack Service is just me!
 
 # Project Demo
 
